@@ -6,33 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Radar de Pets</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
 </head>
 <body>
-  <header class="header">
-    <img src="./img/LogoRastroCerto.png" alt="Logo RastroCerto" class="header__logo" />
-    <nav class="header__nav">
-      <a href="#" class="header__link">Home</a>
-      <a href="#" class="header__link header__link--active">Radar de Pets</a>
-      <a href="#" class="header__link">ONGs/Protetores</a>
-      <a href="#" class="header__link">Final Feliz</a>
-      <a href="#" class="header__link">Minha Área</a>
-    </nav>
-  </header>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <a href="#" class="logo">
+            <img src="./img/LogoRastroCerto.png" alt="LogoRastroCerto">
+        </a>
+
+        <nav class="nav-menu">
+            <!-- <button class="menu-mobile" aria-label="Abrir Menu">☰</button> -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#radar">Radar de Pets</a></li>
+                <li><a href="#ongs">ONGs/Protetores</a></li>
+                <li><a href="#final-feliz">Final Feliz</a></li>
+                <li><a href="#minha-area">Minha Área</a></li>
+            </ul>
+        </nav>
+    </header>
 
   <main>
     <section class="section section--encontrados">
       <h2 class="section__title">🔍 Procure aqui seu pet</h2>
       <p class="section__text">
-        Tecnologia inteligente para localizar pets perdidos...
+        Tecnologia inteligente para localizar pets perdidos. Utiliza microchips, inteligência artificial e dados da comunidade para cruzar informações em tempo real e encontrar animais desaparecidos com mais precisão. Quanto mais detalhes fornecidos, maiores as chances de reencontro. É possível cadastrar o microchip e ativar alertas na região.
       </p>
-      <div class="pets__grid" id="encontrados"></div>
+      <div class="pets__encontrados" id="encontrados"></div>
     </section>
 
     <section class="section section--perdidos">
       <h2 class="section__title">🔍 Anuncie aqui seu pet</h2>
       <p class="section__text">
-        Perdeu seu pet? Crie um anúncio em minutos...
+        Perdeu seu pet? Crie um anúncio em minutos e ative alertas para pessoas próximas.Nossa IA cruza dados com relatos da região e aumenta suas chances de reencontro.
       </p>
       <div class="pets__grid" id="perdidos"></div>
     </section>
@@ -40,8 +48,16 @@
     <div class="vermais">Ver mais ...</div>
   </main>
 
-  <footer class="footer">© 2025 RastroCerto. Todos os direitos reservados.</footer>
-
+ <!-- Footer -->
+    <footer class="footer">
+       
+        <div class="direitos">
+            <p>© 2025 RastroCerto. Todos os direitos reservados.</p>
+        </div>
+        <div id="shimeji-container">
+            <!-- <img src="./img/GATO.gif" alt="Shimeji" id="shimeji"> -->
+        </div>
+    </footer>
   
 </body>
 </html>
