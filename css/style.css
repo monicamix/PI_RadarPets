@@ -1,0 +1,105 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+  height: 60px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.header__link--active {
+  background: #0098e5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 2rem;
+  background: #fdf1e7;
+  margin-bottom: 1rem;
+}
+
+.section--perdidos {
+  background: #f5d1b1;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section__text {
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+
+.pets__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.pet-card {
+  background: white;
+  border: 2px solid orange;
+  padding: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+}
+
+.pet-card--inactive {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.vermais {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #202a3b;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header__nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .pets__grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
